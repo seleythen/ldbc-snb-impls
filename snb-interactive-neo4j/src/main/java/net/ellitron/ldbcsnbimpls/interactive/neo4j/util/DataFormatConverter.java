@@ -179,22 +179,22 @@ public class DataFormatConverter {
    */
   private enum Relationship {
 
-    CONTAINEROF("CONTAINER_OF", "containerOf", new String[]{"creationDate"}),
-    HASCREATOR("HAS_CREATOR", "hasCreator", new String[]{"creationDate"}),
-    HASINTEREST("HAS_INTEREST", "hasInterest", new String[]{"creationDate"}),
-    HASMEMBER("HAS_MEMBER", "hasMember", new String[]{"creationDate", "type", "joinDate"}),
-    HASMODERATOR("HAS_MODERATOR", "hasModerator", new String[]{"creationDate"}),
-    HASTAG("HAS_TAG", "hasTag", new String[]{"creationDate"}),
+    CONTAINEROF("CONTAINER_OF", "containerOf", new String[]{}),
+    HASCREATOR("HAS_CREATOR", "hasCreator", new String[]{}),
+    HASINTEREST("HAS_INTEREST", "hasInterest", new String[]{}),
+    HASMEMBER("HAS_MEMBER", "hasMember", new String[]{"type", "joinDate"}),
+    HASMODERATOR("HAS_MODERATOR", "hasModerator", new String[]{}),
+    HASTAG("HAS_TAG", "hasTag", new String[]{}),
     HASTYPE("HAS_TYPE", "hasType", new String[]{}),
-    ISLOCATEDIN("IS_LOCATED_IN", "isLocatedIn", new String[]{"creationDate"}),
+    ISLOCATEDIN("IS_LOCATED_IN", "isLocatedIn", new String[]{}),
     ISPARTOF("IS_PART_OF", "isPartOf", new String[]{}),
     ISSUBCLASSOF("IS_SUBCLASS_OF", "isSubclassOf", new String[]{}),
-    KNOWS("KNOWS", "knows", new String[]{"creationDate"}),
-    LIKES("LIKES", "likes", new String[]{"creationDate"}),
-    REPLYOF("REPLY_OF", "replyOf", new String[]{"creationDate"}),
-    SPEAKS("SPEAKS", "speaks", new String[]{"creationDate", "language"}),
-    STUDYAT("STUDY_AT", "studyAt", new String[]{"creationDate", "classYear"}),
-    WORKAT("WORK_AT", "workAt", new String[]{"creationDate", "workFrom"});
+    KNOWS("KNOWS", "knows", new String[]{}),
+    LIKES("LIKES", "likes", new String[]{}),
+    REPLYOF("REPLY_OF", "replyOf", new String[]{}),
+    SPEAKS("SPEAKS", "speaks", new String[]{"language"}),
+    STUDYAT("STUDY_AT", "studyAt", new String[]{"classYear"}),
+    WORKAT("WORK_AT", "workAt", new String[]{"workFrom"});
 
     /*
      * The type given to these nodes in Neo4j. We use the same types here as
