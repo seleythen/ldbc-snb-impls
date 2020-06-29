@@ -180,18 +180,18 @@ public class DataFormatConverter {
   private enum Relationship {
 
     CONTAINEROF("CONTAINER_OF", "containerOf", new String[]{}),
-    HASCREATOR("HAS_CREATOR", "hasCreator", new String[]{}),
+    HASCREATOR("HAS_CREATOR", "hasCreator", new String[]{"creationDate"}),
     HASINTEREST("HAS_INTEREST", "hasInterest", new String[]{}),
     HASMEMBER("HAS_MEMBER", "hasMember", new String[]{"joinDate"}),
     HASMODERATOR("HAS_MODERATOR", "hasModerator", new String[]{}),
-    HASTAG("HAS_TAG", "hasTag", new String[]{}),
+    HASTAG("HAS_TAG", "hasTag", new String[]{"creationDate"}),
     HASTYPE("HAS_TYPE", "hasType", new String[]{}),
-    ISLOCATEDIN("IS_LOCATED_IN", "isLocatedIn", new String[]{}),
+    ISLOCATEDIN("IS_LOCATED_IN", "isLocatedIn", new String[]{"creationDate"}),
     ISPARTOF("IS_PART_OF", "isPartOf", new String[]{}),
     ISSUBCLASSOF("IS_SUBCLASS_OF", "isSubclassOf", new String[]{}),
     KNOWS("KNOWS", "knows", new String[]{"creationDate"}),
     LIKES("LIKES", "likes", new String[]{"creationDate"}),
-    REPLYOF("REPLY_OF", "replyOf", new String[]{}),
+    REPLYOF("REPLY_OF", "replyOf", new String[]{"creationDate"}),
     SPEAKS("SPEAKS", "speaks", new String[]{}),
     STUDYAT("STUDY_AT", "studyAt", new String[]{"classYear"}),
     WORKAT("WORK_AT", "workAt", new String[]{"workFrom"});
