@@ -593,11 +593,11 @@ public class DataFormatConverter {
                 if (i > 1) {
                   if (relProps.get(i - 2).equals("creationDate")) {
                     outFile.append(String.valueOf(
-                        creationDateDateFormat.parse(colVals[i]).getTime())
+                        OffsetDateTime.parse(colVals[i]).toEpochSecond())
                         + "|");
                   } else if (relProps.get(i - 2).equals("joinDate")) {
                     outFile.append(String.valueOf(
-                        creationDateDateFormat.parse(colVals[i]).getTime())
+                        OffsetDateTime.parse(colVals[i]).toEpochSecond())
                         + "|");
                   } else if (propDataTypes.get(relProps.get(i - 2)).equals("string") && colVals[i].length() > 0) {
                     outFile.append("\"" + colVals[i] + "\"" + "|");
