@@ -179,7 +179,7 @@ public class DataFormatConverter {
    */
   private enum Relationship {
 
-    CONTAINEROF("CONTAINER_OF", "containerOf", new String[]{}),
+    CONTAINEROF("CONTAINER_OF", "containerOf", new String[]{"creationDate"}),
     HASCREATOR("HAS_CREATOR", "hasCreator", new String[]{"creationDate"}),
     HASINTEREST("HAS_INTEREST", "hasInterest", new String[]{}),
     HASMEMBER("HAS_MEMBER", "hasMember", new String[]{"joinDate"}),
