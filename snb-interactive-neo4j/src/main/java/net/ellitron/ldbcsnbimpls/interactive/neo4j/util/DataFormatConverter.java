@@ -30,6 +30,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.OffsetDateTime;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
@@ -463,7 +464,7 @@ public class DataFormatConverter {
                     String.valueOf(cal.get(Calendar.MONTH) + 1) + "|");
               } else if (nodeProps.get(i - 1).equals("creationDate")) {
                 outFile.append(String.valueOf(
-                    creationDateDateFormat.parse(colVals[i]).getTime()) + "|");
+                    OffsetDateTime.parse(colVals[i]).toEpochSecond()) + "|");
               } else if (propDataTypes.get(nodeProps.get(i - 1)).equals("string") && colVals[i].length() > 0) {
                 outFile.append("\"" + colVals[i] + "\"" + "|");
               } else {
