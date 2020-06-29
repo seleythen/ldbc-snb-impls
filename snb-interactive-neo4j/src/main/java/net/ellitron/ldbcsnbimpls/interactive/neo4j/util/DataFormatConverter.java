@@ -99,7 +99,7 @@ public class DataFormatConverter {
     PLACE("PLACE_ID", "id", "Place", "place",
         new String[]{"name", "url", "type"}),
     POST("POST_ID", "id", "Message;Post", "post",
-        new String[]{"imageFile", "creationDate", "locationIP", "browserUsed",
+        new String[]{"creationDate", "imageFile", "locationIP", "browserUsed",
           "language", "content", "length"}),
     TAG("TAG_ID", "id", "Tag", "tag",
         new String[]{"name", "url"}),
