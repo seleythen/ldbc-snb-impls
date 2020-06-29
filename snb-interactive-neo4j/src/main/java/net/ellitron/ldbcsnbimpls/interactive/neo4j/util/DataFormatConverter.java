@@ -181,7 +181,7 @@ public class DataFormatConverter {
 
     CONTAINEROF("CONTAINER_OF", "containerOf", new String[]{"creationDate"}),
     HASCREATOR("HAS_CREATOR", "hasCreator", new String[]{"creationDate"}),
-    HASINTEREST("HAS_INTEREST", "hasInterest", new String[]{}),
+    HASINTEREST("HAS_INTEREST", "hasInterest", new String[]{"creationDate"}),
     HASMEMBER("HAS_MEMBER", "hasMember", new String[]{"creationDate", "type", "joinDate"}),
     HASMODERATOR("HAS_MODERATOR", "hasModerator", new String[]{"creationDate"}),
     HASTAG("HAS_TAG", "hasTag", new String[]{"creationDate"}),
