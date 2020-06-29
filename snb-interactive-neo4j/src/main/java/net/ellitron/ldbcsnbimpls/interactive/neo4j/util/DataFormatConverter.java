@@ -90,7 +90,7 @@ public class DataFormatConverter {
         new String[]{"creationDate", "locationIP", "browserUsed", "content",
           "length"}),
     FORUM("FORUM_ID", "id", "Forum", "forum",
-        new String[]{"title", "creationDate"}),
+        new String[]{"creationDate", "title"}),
     ORGANISATION("ORGANISATION_ID", "id", "Organisation", "organisation",
         new String[]{"type", "name", "url"}),
     PERSON("PERSON_ID", "id", "Person", "person",
