@@ -429,6 +429,15 @@ public class DataFormatConverter {
           }
         }
 
+        if(!personEmail.isEmpty()) {
+          outFile.append("|email:" + propDataTypes.get("email"));
+        }
+
+        if(!personSpeaks.isEmpty()) {
+          outFile.append("|speaks:" + propDataTypes.get("speaks"));
+        }
+
+
         // And the last field is always a label for this node type.
         outFile.append("|:LABEL\n");
 
